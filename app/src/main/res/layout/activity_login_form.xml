@@ -1,9 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".LoginFormActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hg10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hg90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vg10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vg90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <TextView
+            android:id="@+id/login_form_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_form_header_label"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/vg90"
+            app:layout_constraintStart_toStartOf="@+id/vg10"
+            app:layout_constraintTop_toTopOf="@+id/hg10" />
+
+        <EditText
+            android:id="@+id/login_email_textField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_2x"
+            android:autofillHints="no"
+            android:hint="@string/email_textField_hint"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toStartOf="@+id/vg90"
+            app:layout_constraintStart_toStartOf="@+id/vg10"
+            app:layout_constraintTop_toBottomOf="@+id/login_form_header" />
+
+        <EditText
+            android:id="@+id/login_password_textField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:autofillHints="no"
+            android:hint="@string/password_textField_hint"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toStartOf="@+id/vg90"
+            app:layout_constraintStart_toStartOf="@+id/vg10"
+            app:layout_constraintTop_toBottomOf="@+id/login_email_textField" />
+
+        <TextView
+            android:id="@+id/no_account_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/margin_2x"
+            android:text="@string/no_account_yet"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/vg10"
+            app:layout_constraintTop_toBottomOf="@id/login_password_textField" />
+
+        <TextView
+            android:id="@+id/sign_up_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/sign_up_text"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/no_account_label"
+            app:layout_constraintStart_toEndOf="@+id/no_account_label"
+            app:layout_constraintTop_toTopOf="@+id/no_account_label" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_2x"
+            android:background="@color/blue"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/vg90"
+            app:layout_constraintStart_toEndOf="@id/vg10"
+            app:layout_constraintTop_toBottomOf="@id/no_account_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

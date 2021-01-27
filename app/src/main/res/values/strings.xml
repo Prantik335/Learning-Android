@@ -6,4 +6,9 @@
     <string name="email_textField_hint">Enter your email address</string>
     <string name="address_textField_hint">Enter your address</string>
     <string name="submit">Submit</string>
+    <string name="login_form_header_label">Login Form</string>
+    <string name="password_textField_hint">Enter your password</string>
+    <string name="no_account_yet"> No account yet?</string>
+    <string name="sign_up_text">Sign up</string>
+    <string name="login">Login</string>
 </resources>

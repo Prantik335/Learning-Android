@@ -14,7 +14,8 @@ public class ListViewActivity extends AppCompatActivity {
     private String[] options = {
             "Introduction",
             "My Bio App - Relative Layout",
-            "My Bio App - Linear Layout"
+            "My Bio App - Linear Layout",
+            "Login Form - Constraint Layout"
     };
 
     @Override
@@ -40,6 +41,9 @@ public class ListViewActivity extends AppCompatActivity {
                     break;
                 case 2:
                     startActivity(new Intent(this, MyBioLinearActivity.class));
+                    break;
+                case 3:
+                    startActivity(new Intent(this, LoginFormActivity.class));
                     break;
                 default:
                     Toast.makeText(this, options[i], Toast.LENGTH_SHORT).show();
