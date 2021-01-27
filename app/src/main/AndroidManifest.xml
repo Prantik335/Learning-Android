@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningAndroid">
-        <activity android:name=".Activity_two"></activity>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".Activity_two" />
         <activity android:name=".Activity_one" />
         <activity android:name=".CurrencyConverterActivity" />
         <activity android:name=".SmsActivity" />

@@ -19,6 +19,7 @@ public class ListViewActivity extends AppCompatActivity {
             "Dice Roll App",
             "SMS App",
             "Currency Converter App",
+            "Passing data between two activity"
     };
 
     @Override
@@ -56,6 +57,9 @@ public class ListViewActivity extends AppCompatActivity {
                     break;
                 case 6:
                     startActivity(new Intent(this, CurrencyConverterActivity.class));
+                    break;
+                case 7:
+                    startActivity(new Intent(this, Activity_one.class));
                     break;
                 default:
                     Toast.makeText(this, options[i], Toast.LENGTH_SHORT).show();

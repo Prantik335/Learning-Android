@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyBioLinearActivity">
+    tools:context=".ProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/header2"
+            android:id="@+id/header3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin"
@@ -22,7 +22,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/name_textField2"
+            android:id="@+id/name_textField3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/default_margin"
@@ -32,7 +32,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/phone_textField2"
+            android:id="@+id/phone_textField3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/default_margin"
@@ -42,7 +42,7 @@
             android:inputType="phone" />
 
         <EditText
-            android:id="@+id/email_textField2"
+            android:id="@+id/email_textField3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/default_margin"
@@ -52,7 +52,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/address_textField2"
+            android:id="@+id/address_textField3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/default_margin"
@@ -62,7 +62,7 @@
             android:inputType="textPostalAddress" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/submit_button2"
+            android:id="@+id/submit_button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin"

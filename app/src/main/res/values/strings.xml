@@ -18,4 +18,8 @@
     <string name="currency_converter_header_label">Dollar to Taka converter</string>
     <string name="enter_dollar">Enter Dollar</string>
     <string name="convert">Convert</string>
+    <string name="activity_one_header">Activity One</string>
+    <string name="send_data_to_activity_b">Send data to Activity B</string>
+    <string name="activity_two_header">Activity two</string>
+    <string name="go_to_listview">Go to listView</string>
 </resources>
