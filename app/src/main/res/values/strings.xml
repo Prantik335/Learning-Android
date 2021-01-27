@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Learning Android</string>
+    <string name="bio_screen_header">Enter your data</string>
+    <string name="name_textField_hint">Enter your name</string>
+    <string name="phone_textField_hint">Enter your phone number</string>
+    <string name="email_textField_hint">Enter your email address</string>
+    <string name="address_textField_hint">Enter your address</string>
+    <string name="submit">Submit</string>
 </resources>
