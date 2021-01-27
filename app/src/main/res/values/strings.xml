@@ -11,4 +11,11 @@
     <string name="no_account_yet"> No account yet?</string>
     <string name="sign_up_text">Sign up</string>
     <string name="login">Login</string>
+    <string name="dice_image_des">show dice in this image placeholder</string>
+    <string name="roll_dice">Roll Dice</string>
+    <string name="sms_textField_hint">Your message here....</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="currency_converter_header_label">Dollar to Taka converter</string>
+    <string name="enter_dollar">Enter Dollar</string>
+    <string name="convert">Convert</string>
 </resources>

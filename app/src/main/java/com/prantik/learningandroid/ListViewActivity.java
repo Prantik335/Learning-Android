@@ -15,7 +15,10 @@ public class ListViewActivity extends AppCompatActivity {
             "Introduction",
             "My Bio App - Relative Layout",
             "My Bio App - Linear Layout",
-            "Login Form - Constraint Layout"
+            "Login Form - Constraint Layout",
+            "Dice Roll App",
+            "SMS App",
+            "Currency Converter App",
     };
 
     @Override
@@ -44,6 +47,15 @@ public class ListViewActivity extends AppCompatActivity {
                     break;
                 case 3:
                     startActivity(new Intent(this, LoginFormActivity.class));
+                    break;
+                case 4:
+                    startActivity(new Intent(this, DiceRollActivity.class));
+                    break;
+                case 5:
+                    startActivity(new Intent(this, SmsActivity.class));
+                    break;
+                case 6:
+                    startActivity(new Intent(this, CurrencyConverterActivity.class));
                     break;
                 default:
                     Toast.makeText(this, options[i], Toast.LENGTH_SHORT).show();
